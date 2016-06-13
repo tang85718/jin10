@@ -8,7 +8,7 @@ class Jin10Spider(scrapy.Spider):
     start_urls = ["http://www.jin10.com"]
 
     def __init__(self):
-        print("init")
+        print("Jin10Spider __init__")
 
     def parse(self, response):
         pass

@@ -13,4 +13,5 @@ class Jin10Item(scrapy.Item):
     date = scrapy.Field()
     content = scrapy.Field()
 
-    pass
+    def __init__(self):
+        print("Jin10Item __init__")

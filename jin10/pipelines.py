@@ -7,5 +7,9 @@
 
 
 class Jin10Pipeline(object):
+
+    def __init__(self):
+        print("Jin10Pipeline __init__")
+
     def process_item(self, item, spider):
         return item
