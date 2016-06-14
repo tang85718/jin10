@@ -12,10 +12,13 @@ class Jin10Spider(scrapy.Spider):
         print("Jin10Spider __init__")
 
     def parse(self, response):
-        for sel in response.xpath("//div[@class='newsline']/table/tr"):
+        for sel in response.xpath("//div[@class='newsline']"):
             # item = Jin10Item()
             # print sel
-            content = sel.xpath("./td[@id]/text()").extract()
+            id = sel.xpath("./attribute::id").extract()
+            print id
+
+            content = sel.xpath("./table/tr/td[@id]/text()").extract()
             print type(content)
 
             if len(content) > 0:
