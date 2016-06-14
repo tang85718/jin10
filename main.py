@@ -5,7 +5,3 @@ from scrapy.cmdline import execute
 print("main begin")
 
 execute(['scrapy', 'crawl', 'jin10'])
-print("main end")
-print("main end")
-print("main end")
-print("main end")

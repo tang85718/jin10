@@ -10,8 +10,8 @@ import scrapy
 class Jin10Item(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    date = scrapy.Field()
     content = scrapy.Field()
+    date = scrapy.Field()
 
     def __init__(self):
         print("Jin10Item __init__")
