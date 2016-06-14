@@ -14,7 +14,10 @@ class Jin10Pipeline(object):
         # self.__db = database('localhost', 'root', '12345', 'spider', 3306)
 
     def process_item(self, item, spider):
-        content = item['content']
-        utf8str = content.encode('utf-8')
-        print(utf8str)
+
+        print type(item)
+
+        # content = item['content']
+        # date = item['date']
+        # print("%s" % content)
         return item
