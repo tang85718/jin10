@@ -4,6 +4,7 @@ import scrapy.spiders
 from jin10.items import Jin10Item
 
 class Jin10Spider(scrapy.Spider):
+
     name = "jin10"
     allowed_domains = ["www.jin10.com"]
     start_urls = ["http://www.jin10.com"]

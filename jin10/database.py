@@ -3,7 +3,6 @@
 import MySQLdb
 
 class Database(object):
-
     def __init__(self, db, host='localhost', port=3306, user='root', passwd='root'):
         self.__host = host
         self.__port = port
@@ -18,12 +17,8 @@ class Database(object):
             raise MySQLdb.Error
 
     """ 创建数据库 """
-    def __createDB(self):
+    def __create_db(self):
         try:
             self.__cur.execute("CREATE DATABASE %s IF NOT EXISTS" % self.__db)
         except MySQLdb.Error, e:
             print("CREATE DATABASE fail %d" % e.args[0])
-
-
-
-
