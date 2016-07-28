@@ -8,9 +8,6 @@ class Jin10Spider(scrapy.Spider):
     allowed_domains = ["www.jin10.com"]
     start_urls = ["http://www.jin10.com"]
 
-    def __init__(self):
-        print("Jin10Spider __init__")
-
     def parse(self, response):
         for sel in response.xpath("//div[@class='newsline']"):
             item = Jin10Item()
