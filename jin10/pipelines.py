@@ -5,13 +5,13 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
-import database
+from database import Database as DB
 
 class Jin10Pipeline(object):
 
     def __init__(self):
         print("Jin10Pipeline __init__")
-        # self.__db = database('localhost', 'root', '12345', 'spider', 3306)
+        self.__db = DB('spider')
 
     def process_item(self, item, spider):
 
