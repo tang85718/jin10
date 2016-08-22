@@ -7,13 +7,9 @@
 
 import scrapy
 
+
 class Jin10Item(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
     mid = scrapy.Field()
     content = scrapy.Field()
     type = scrapy.Field()
-    # time = scrapy.Field()
-
-    # def __init__(self):
-    #     print("Jin10Item __init__")

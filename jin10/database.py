@@ -46,7 +46,7 @@ class Database(object):
                          "SELECT '%d','%s','%s' FROM dual " \
                          "WHERE NOT EXISTS" \
                          "(SELECT mid FROM spider.raw_data WHERE mid=%d)" % (mid, content, date, mid)
-            print(insert_sql)
+            # print(insert_sql)
 
             self.__cur.execute(insert_sql)
             self.__conn.commit()
