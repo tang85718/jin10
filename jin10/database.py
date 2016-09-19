@@ -19,9 +19,8 @@ class Database(object):
         except MySQLdb.Error, e:
             print("connect MySQL fail %d" % e.args[0])
 
-    """ 创建数据库 """
-
     def __create_db(self):
+        """ 创建数据库 """
         try:
             self.__cur.execute("CREATE DATABASE `spider`")
         except MySQLdb.Error, e:
