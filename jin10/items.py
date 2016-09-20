@@ -12,4 +12,7 @@ class Jin10Item(scrapy.Item):
     # define the fields for your item here like:
     mid = scrapy.Field()
     content = scrapy.Field()
+    actual = scrapy.Field()
+    before = scrapy.Field()
+    exep = scrapy.Field()
     type = scrapy.Field()
