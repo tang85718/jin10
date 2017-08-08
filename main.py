@@ -10,7 +10,7 @@ setting = get_project_settings()
 process = CrawlerProcess(setting)
 process.crawl(Jin10Spider)
 process.start() # the script will block here until the crawling is finished
-
+# ddd
 # from scrapy.cmdline import execute
 #
 # execute(['scrapy', 'crawl', 'jin10'])
